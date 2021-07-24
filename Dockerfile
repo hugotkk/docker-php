@@ -99,3 +99,8 @@ libmcrypt-dev \
 ENV MUSL_LOCALE_DEPS cmake make musl-dev gcc gettext-dev libintl
 RUN apk add --no-cache \
 $MUSL_LOCALE_DEPS
+
+# WEBP
+RUN apk add --no-cache \
+libwebp \
+libwebp-tools
