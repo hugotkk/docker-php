@@ -42,6 +42,11 @@ oniguruma-dev \
 && docker-php-ext-enable mbstring \
 && rm -rf /tmp/*
 
+# Install exif  extension
+RUN docker-php-ext-install exif \
+&& docker-php-ext-enable exif \
+&& rm -rf /tmp/*
+
 # Install opcache
 ENV PHPIZE_DEPS \
 autoconf \
