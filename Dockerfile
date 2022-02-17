@@ -1,4 +1,4 @@
-FROM php:8.0.8-fpm-alpine3.14
+FROM php:8.1.2-fpm-alpine3.14
 
 # Optional, force UTC as server time
 RUN echo "Asia/Hong_Kong" > /etc/timezone
